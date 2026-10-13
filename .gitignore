@@ -1,1 +1,19 @@
+# ---- Build output ----
 /dist/
+/build/
+/nbproject/private/
+
+# ---- Apache Derby database files ----
+# Generated at runtime by the Derby network server; never commit a live DB.
+/DB/
+/db/
+/pcplusdb/
+/myfreshdb/
+*.lck
+derby.log
+
+# ---- IDE / OS ----
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
