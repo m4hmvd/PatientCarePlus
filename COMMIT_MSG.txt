@@ -1,0 +1,14 @@
+Record the verified toolchain in the README
+
+No functional change. The project was compiled and exercised end to end for the
+first time - it had only ever been read before - so the README now states what it
+was verified against.
+
+Verified with JDK 25.0.4 and Apache Derby 10.17.1.0:
+- javac over all 26 sources: 0 errors.
+- Against a live Derby Network Server on 127.0.0.1:1527: the network connection
+  succeeds, PatientCareController.initializeCoreTables() creates all six tables,
+  all four seeded logins (admin/doctor/nurse/reception at test.com, password 1234)
+  authenticate, a wrong password is rejected, and registerPatient() writes a
+  record and advances the id (P001 then P002).
+- Launched the Swing UI: starts cleanly, 0 exceptions, window stays up.

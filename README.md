@@ -86,6 +86,9 @@ Seeded automatically on first run, for local development only:
 - **Apache Derby Network Server** — the client jars ship in `libs/`
 - **NetBeans** (Ant project), or any IDE that understands the Ant build
 
+Verified with **JDK 25.0.4** against **Apache Derby 10.17.1.0**: schema creation, all
+four seeded logins, and patient registration all pass end to end.
+
 ## Running
 
 1. Start the Derby Network Server on port `1527`.
